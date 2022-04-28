@@ -116,7 +116,7 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: 2;
+        z-index: 10000;
         cursor: pointer;
     }
 
@@ -157,7 +157,7 @@
 
     .info-card {
         position: relative;
-        z-index: 1;
+        z-index: 11000;
         margin: 25px;
         overflow: visible;
         width: 87vw;
