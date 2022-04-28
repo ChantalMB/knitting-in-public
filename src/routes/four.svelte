@@ -7,11 +7,11 @@
     let showCard;
 
     let sounds = {
-                    '../static/soundscapes/spinning.mp3': [1, 67.5, 11, "\"P.S. Doll at the Ferry must be taught to Knit, and made to do a sufficient days work of it—otherwise (if suffered to be idle) many more will walk in her steps.\""],
-                    '../static/soundscapes/edwardian.m4a': [-24.5, 25, 13, "\"The idea of modesty and virtue in a Louisiana colored girl might well be ridiculed; as a general thing she has neither.\""],
-                    '../static/soundscapes/suffrage.m4a': [-19, 3, 11, "\"It is not fair that they should vote, nor is it fair that a plantation negro who can neither read nor write should be entrusted with the ballot.\""],
-                    '../static/soundscapes/london-streets.m4a': [70, 20, 12, "\"Intended only for persons who dress well and who appreciate first class illustrations and literature.\""],
-                    '../static/soundscapes/sm.m4a': [39, 61, 13, "\"And it just keeps getting more and more expensive and elitist, until only other white women can keep up.\""]
+                    '/soundscapes/spinning.mp3': [1, 67.5, 11, "\"P.S. Doll at the Ferry must be taught to Knit, and made to do a sufficient days work of it—otherwise (if suffered to be idle) many more will walk in her steps.\""],
+                    '/soundscapes/edwardian.m4a': [-24.5, 25, 13, "\"The idea of modesty and virtue in a Louisiana colored girl might well be ridiculed; as a general thing she has neither.\""],
+                    '/soundscapes/suffrage.m4a': [-19, 3, 11, "\"It is not fair that they should vote, nor is it fair that a plantation negro who can neither read nor write should be entrusted with the ballot.\""],
+                    '/soundscapes/london-streets.m4a': [70, 20, 12, "\"Intended only for persons who dress well and who appreciate first class illustrations and literature.\""],
+                    '/soundscapes/sm.m4a': [39, 61, 13, "\"And it just keeps getting more and more expensive and elitist, until only other white women can keep up.\""]
                 }
     let show = false;
     let card = false;
@@ -27,19 +27,19 @@
     }
 
     function displayText(src) {
-        if (src === '../static/soundscapes/spinning.mp3') {
+        if (src === '/soundscapes/spinning.mp3') {
             showCard = "spinning";
             toggleCard()
-        } else if (src === '../static/soundscapes/edwardian.m4a') {
+        } else if (src === '/soundscapes/edwardian.m4a') {
             showCard = "edwardian";
             toggleCard()
-        } else if (src === '../static/soundscapes/suffrage.m4a') {
+        } else if (src === '/soundscapes/suffrage.m4a') {
             showCard = "suffrage";
             toggleCard()
-        } else if (src === '../static/soundscapes/london-streets.m4a') {
+        } else if (src === '/soundscapes/london-streets.m4a') {
             showCard = "streets";
             toggleCard()
-        } else if (src === '../static/soundscapes/sm.m4a') {
+        } else if (src === '/soundscapes/sm.m4a') {
             showCard = "sm";
             toggleCard()
 
@@ -57,9 +57,9 @@
 
     <div class="mo">
         <div id="mo-context">
-            <img class="mo-img" in:fade|local={{ duration: 1000 }} id="mo-pic" src="../static/images/mo-pic.svg"/>
-            <img class="mo-img" in:fade|local={{ y: -200, delay: 2000, duration: 1000 }} id="mo-if" src="../static/images/mo-if-pic.svg"/> 
-            <img class="mo-img" in:fade|local={{ y: -200, delay: 3000, duration: 1000 }} id="mo-why" src="../static/images/mo-why-pic.svg"/>
+            <img class="mo-img" in:fade|local={{ duration: 1000 }} id="mo-pic" src="/images/mo-pic.svg"/>
+            <img class="mo-img" in:fade|local={{ y: -200, delay: 2000, duration: 1000 }} id="mo-if" src="/images/mo-if-pic.svg"/> 
+            <img class="mo-img" in:fade|local={{ y: -200, delay: 3000, duration: 1000 }} id="mo-why" src="/images/mo-why-pic.svg"/>
             
             <div id="infoOverlay" on:mouseenter={toggleShow}>
                 {#if show}
@@ -67,7 +67,7 @@
                 {/if}
             </div>
                 {#if show}
-                    <img class="mo-img" transition:slide|local={{ duration: 1000 }} id="overlay" src="../static/images/mo-overlay.svg"/>
+                    <img class="mo-img" transition:slide|local={{ duration: 1000 }} id="overlay" src="/images/mo-overlay.svg"/>
                     <div id="mo-context" on:click={toggleShow}></div>
                 {/if}
             </div>
@@ -89,7 +89,7 @@
                 <p>As white women move towards knitting as leisure, and hence towards the modern perceived identity of a knitter, black woman were trapped in systems of slavery and barely acknowledged as women at all. Black women were labourers rather than knitters as white women were, even when the motions being performed were the same.</p>
                 {:else if showCard === "edwardian"}
                 <p>In the formation of true womanhood and femininity as discussed previously, black women were barred from entry. They may be pious, but they could not be pure nor virtuous by merit of their race, and in largely being members of the working class post-abolition, they were excluded from the middle class ideal of domesticity. In North America, black women certainly knit as an economical means to cloth themselves and their families, but this was done out of necessity rather than leisure, therefore it was not performing domesticity in the &ldquo;correct&rdquo; manner.</p>
-                <img id="sorjourner" src="../static/images/sorjourner.jpg"/>
+                <img id="sorjourner" src="/images/sorjourner.jpg"/>
                 <p>Despite this ostracism, knitting as a symbol of femininity was still used by black women to protest their exclusion from the cult of womanhood. In a number of portraits, activist Sojourner Truth chose to pose with her knitting in hand; this choice was likely to assert her femininity, and in turn clearly state that she was as much of a woman as her white counterparts. Although these efforts ultimately did not change who a knitter was thought to be in the eyes of the public, the presence of knitting was used as a means to identify oneself as a knitter and the associated identities which accompanied this.&nbsp;</p>
                 
                 {:else if showCard === "suffrage"}
@@ -98,7 +98,7 @@
                 <p>In spite of holding these beliefs, freed black women were still not permitted to participate in these bees alongside white women. They were excluded just as poor women were by classism, but further, white women still perceived black women as being members of a lesser race. They disagreed with the cruelty of slavery yet still did not want to uplift black women as their sociopolitical equals. As mentioned in the discussion of knitters as feminine, part of the moral cleansing which white suffragists desired to perform using the vote was to &ldquo;dilute&rdquo; the vote of male African Americans and immigrants who had been enfranchised prior, as this was seen as threatening the power of the dominant class. Once again, black women were deliberately excluded from performing these publicised acts of femininity and in turn were once again removed from the identities that compose what it is to be a knitter.</p>
                 
                 {:else if showCard === "streets"}
-                <img id="vk" src="../static/images/vk.png"/>
+                <img id="vk" src="/images/vk.png"/>
 
                 <p>With the 19th century rise in middle class wealth coupled with knitting now occupying much of the leisure time of this dominant class, the demand for supplies grew. Further, with shopping now being perceived as an appropriate past time for these white, economically and socially privileged women, advertising began to target them by appealing to how they spent their time of leisure. It is at this point that knitting became firmly entrenched in whiteness. Media depicting knitting with illustrations of women, men and children modelling or handling the yarn, pattern, or notions being advertised were universally white, reflecting the ideals of femininity that the women they were marketing towards possessed, or at least, should possess. Vogue Knitting exemplified this; in launching the magazine during the late 19th century, their covers featured eye-catching fully coloured illustrations, yet any image depicting a body featured white skin. These covers sold the concept that a knitter was white, excluding black women from the narrative entirely.</p>
                 

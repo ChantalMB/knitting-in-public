@@ -9,7 +9,7 @@
 <div class="page">
     
     <div id="shawl" in:fly|local={{ y: -200, duration: 2000 }}>
-        <img src="../static/images/full_shawl.png"/>
+        <img src="/images/full_shawl.png"/>
     </div>
 
     <div id="dialogue-1">
@@ -23,7 +23,7 @@
     </div>
 
     <div id="grab" in:fly|local={{ x: 200, delay: 6000, duration: 2000 }}>
-        <img src="../static/images/grab.png"/>
+        <img src="/images/grab.png"/>
     </div>
 
     <div id="dialogue-2">

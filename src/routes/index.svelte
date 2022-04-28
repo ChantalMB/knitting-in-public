@@ -31,7 +31,7 @@
 	{#each layers as layer}
 		<img
 			style="transform: translate(0,{-y * layer / (layers.length - 1)}px)"
-			src="../static/parallax/parallax{layer}.png"
+			src="/parallax/parallax{layer}.png"
 			alt="parallax layer {layer}"
 		>
 	{/each}

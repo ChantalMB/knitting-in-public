@@ -3,7 +3,7 @@ import Header from "$lib/Header.svelte";
 
 import AudioPlayer from "$lib/modules/AudioPlayer.svelte";
 
-let allsounds = ['../static/soundscapes/spinning.mp3', '../static/soundscapes/Great Wheel Spinning-97FaL9xigJU.mp3']
+let allsounds = ['/soundscapes/spinning.mp3', '/soundscapes/Great Wheel Spinning-97FaL9xigJU.mp3']
 
 </script>
 
