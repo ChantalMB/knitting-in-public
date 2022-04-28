@@ -36,17 +36,17 @@
 
     <a in:fade|local={{ delay: 1000, duration: 1000 }} id="tank">
         <img src="../static/images/tank.png"/> 
-        <img on:click={()=>toggleCard('tank')} src="../static/images/tankshadow.png"/>    
+        <img on:click={()=>toggleCard('tank')} src="/images/tankshadow.png"/>    
     </a>
 
     <a in:fade|local={{ delay: 1500, duration: 1000 }} id="seeart">
         <img src="../static/images/seeart.png"/> 
-        <img on:click={()=>toggleCard('seeart')} src="../static/images/seeartshadow.png"/>    
+        <img on:click={()=>toggleCard('seeart')} src="/images/seeartshadow.png"/>    
     </a>
 
     <a in:fade|local={{ delay: 2000, duration: 1000 }} id="maman">
         <img src="../static/images/maman.png"/> 
-        <img on:click={()=>toggleCard('maman')} src="../static/images/mamanshadow.png"/>    
+        <img on:click={()=>toggleCard('maman')} src="/images/mamanshadow.png"/>    
     </a>
 
     </div>
