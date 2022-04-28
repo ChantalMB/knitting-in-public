@@ -32,6 +32,7 @@ a, span {
 	font-size: 1em;
 	text-transform: uppercase;
 	will-change: transform, opacity;
+	text-decoration: none;
 }
 
 .maybepg {
