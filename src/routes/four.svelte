@@ -69,7 +69,7 @@
                 {/if}
             </div>
                 {#if show}
-                    <img class="mo-img" transition:slide|local={{ duration: 1000 }} id="overlay" src="/images/mo-overlay.svg"/>
+                    <img class="mo-img" transition:fade|local={{ duration: 1000 }} id="overlay" src="/images/mo-overlay.svg"/>
                     <div id="mo-context" on:click={toggleShow}></div>
                 {/if}
             </div>

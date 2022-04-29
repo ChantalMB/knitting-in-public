@@ -112,6 +112,11 @@
 
     }
 
+    #click-left {
+        position: fixed;
+        bottom: 0;
+    }
+
     #header {
         position: static;
         z-index: 1000;
