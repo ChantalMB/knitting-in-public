@@ -61,11 +61,14 @@
 
             <div class="info-card">
                 {#if showCard === "tank"}
+                <i><h3><a href="https://twitter.com/womensart1/status/1146660773206380544">“Pink M.24 Chaffee Tank.”, Marianne Joergensen, 2006</a></h3></i>
                 <p>This form of truly public knitting is largely what has been promoted in third wave feminism; knitting is not only viewed as radical leisure but as a tool to advocate for causes deemed important. Knitting is assumed to be &ldquo;warm&rdquo;, feminine, and unthreatening, making it the perfect medium to voice concern. Modern women have commodified knitting much like their predecessors by taking already established monuments and reshaping their message through a layer of textiles. In this sense, knitters are inspired to reimagine the personal and private nature of this &ldquo;leisure&rdquo; in their construction of knitting as a communal, visible and performative practice.</p>
                 {:else if showCard === "seeart"}
+                <i><h3><a href="https://www.ishknits.com/rocky-statue-yarn-bomb-philadelphia/">“Go See the Art”, ishknits, 2011</a></h3></i>
                 <p>Yet, in spite of these positives, knitffiti still reinforces what was. The political actions of knitters are frequently dismissed as &ldquo;so nonconfrontational as to be completely ineffective . . . a safe form of activism (if it is even activism at all), both for those practicing it and those covering it in the media,&rdquo; stemming from a history of critical and political thought that is dismissive of both the feminine and the material.&nbsp;</p>
                 <p>Further, the privilege of a knitter who is by default imagined to be white is further reinforced in their ability to perform knitffiti at all. Those partaking in public knitting and knitffiti are able to do so in broad daylight with little to no law enforcement being involved; something deeply ironic considering that graffiti, the art from which knitffiti derives its namesake, is heavily policed due to its origins with African American working-class men. Although occasionally subversive and warmly communal, the narratives which crafted the present default of who a knitter is must first be unraveled from within the knitting community before the larger public narrative of who is expected to knit can be redefined.</p>
                 {:else if showCard === "maman"}
+                <i><h3><a href="https://www.mori.art.museum/en/learning/1178/index.html">Maman in Knits, Magda Sayeg for Roppongi Hills, 2018</a></h3></i>
                 <p>Knitffiti is not always explicitly political; in some knitting circles who partake, it is motivated by the notion of &ldquo;spreading joy&rdquo; and bringing colour to otherwise dark spaces within busy urban centres. These large-scale projects tend to be an expression of the both public and communal nature that has embodied modern knitting; rather than being done exclusively within the home among family or close friend, knitting has returned to being a group activity where those who partake can meet and work together in public spaces regardless of having known eachother prior. In doing this, the performance of a knitter has shifted; the knitter is now viewed as being part of a collective, whether formed intentionally or through silent demonstration as two strangers work on their projects sitting across from each other on the train ride home in the evening.</p>
                 {/if}
             </div>
@@ -80,9 +83,9 @@
     <div on:click={() => goto(`/four`)} id="click-left" >
         <div class="arrow-left"></div>
     </div>
-    <!-- <div on:click={() => goto(`/acknowledgements`)} id="click-right" >
+    <div on:click={() => goto(`/acknowledgements`)} id="click-right" >
         <div class="arrow-right"></div>
-    </div> -->
+    </div>
 </div>
 
 <style>
@@ -131,6 +134,7 @@
     #header {
         position: absolute;
         font-family: 'Kollektif';
+        color: #24305e;
         font-size: 30pt;
         font-weight: bold;
         text-align: left;
@@ -145,6 +149,7 @@
         max-width: 500px;
         position: absolute;
         font-family: 'Playfair Display';
+        font-weight: 100;
         font-size: 12pt;
         text-align: left;
         color: #24305e;
